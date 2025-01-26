@@ -431,12 +431,6 @@
     (path "/d7b5727f-89c0-4bda-9026-13c007f6901e"
       (reference "#FLG0102") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/3c8b8ea4-6e32-454d-a916-64a2b70ba88a"
-      (reference "#GND01") (unit 1) (value "0") (footprint "")
-    )
-    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/92662f16-fba4-4149-8853-e99c2f26c511"
-      (reference "#GND02") (unit 1) (value "0") (footprint "")
-    )
     (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/6236c6d4-0557-480b-aba0-fe38e42674f2"
       (reference "#GND03") (unit 1) (value "0") (footprint "")
     )
@@ -479,8 +473,8 @@
     (path "/ff866a35-debd-4021-b144-2d7288192af2/8a656fe6-1257-4e46-9092-bc718a5a86fb"
       (reference "J3") (unit 1) (value "AudioJack2") (footprint "")
     )
-    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/ef744970-0161-4e33-ad49-f0b83351f5fb"
-      (reference "Q1") (unit 1) (value "Q_NPN_BCE") (footprint "")
+    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/c4b46bd9-30fb-48e4-8e14-d419b1d07c3a"
+      (reference "Q1") (unit 1) (value "BC547B") (footprint "Package_TO_SOT_THT:TO-92_Inline")
     )
     (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/df053971-2822-40f6-a488-b4cbf2865028"
       (reference "R1") (unit 1) (value "39kR") (footprint "")
@@ -508,12 +502,6 @@
     )
     (path "/71b59c4d-cc06-4a36-8722-a4e1f4b89c0f/28160635-57f6-40d6-b47e-5527c745e529"
       (reference "SW1") (unit 1) (value "SW_3PDT_FS57003") (footprint "project_library:SW_3PDT_FS57003")
-    )
-    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/7b68e509-9e04-46ac-8a0c-5be4d3f1dba5"
-      (reference "V1") (unit 1) (value "VSIN") (footprint "")
-    )
-    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/92320a5d-4080-4ef3-9556-cf3356d9821f"
-      (reference "V2") (unit 1) (value "VDC") (footprint "")
     )
   )
 )

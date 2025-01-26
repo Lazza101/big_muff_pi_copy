@@ -1,0 +1,96 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 2897aef6-c1e4-4b98-82bc-f3dc038ab30a)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 129.54 76.2) (size 30.48 20.32) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 526e42b9-dcb2-4f91-83ee-1d25bf9d2787)
+    (property "Sheet name" "effects_sustain" (id 0) (at 129.54 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "effects_sustain.kicad_sch" (id 1) (at 129.54 97.1046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "+9V" input (at 129.54 80.01 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 5c9b70a3-cd2f-4b0c-a070-8312cf941664)
+    )
+    (pin "SIGNAL_IN" input (at 129.54 90.17 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 6a08ac79-293f-4b48-ad03-c0f52c04c21d)
+    )
+    (pin "SIGNAL_OUT" output (at 160.02 90.17 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid cbcd297d-5501-4cd8-a065-e450de3e9eee)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787" (page "2"))
+  )
+
+  (symbol_instances
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/1d464a97-5464-4f85-9044-31d88b8290e5"
+      (reference "#GND01") (unit 1) (value "0") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/c4f7d8ed-b99b-4e08-9e04-df7bcb11aef2"
+      (reference "#GND02") (unit 1) (value "0") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/f2202449-18d4-4644-8524-a662dba77d38"
+      (reference "#GND03") (unit 1) (value "0") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/b59a32d9-c8ed-4da6-aba6-5f7bf09d4309"
+      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/a5e9747d-329e-4d3e-8455-ae1d70409960"
+      (reference "C1") (unit 1) (value "0.1uF") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/7b8dba9d-3d77-42ff-b44a-79720d838415"
+      (reference "C2") (unit 1) (value "500pF") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/a825fe25-e8d5-4d63-b847-ebeeaddb9026"
+      (reference "C3") (unit 1) (value "0.1uF") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/c199f0b4-8741-4ede-b3b0-1a50f6638fb9"
+      (reference "Q1") (unit 1) (value "BC547") (footprint "Package_TO_SOT_THT:TO-92_Inline")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/fd99880c-32e1-4366-b100-ba42f7a7bb8b"
+      (reference "R1") (unit 1) (value "39kR") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/199c1479-67ed-458d-9fbc-12ddbcac0fcf"
+      (reference "R2") (unit 1) (value "100kR") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/0780f782-7fe2-47ba-8034-e51b290a00b3"
+      (reference "R3") (unit 1) (value "470kR") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/a338b323-d48f-484a-8001-02e3a914ba03"
+      (reference "R4") (unit 1) (value "15kR") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/a815fc70-7e6b-4389-91c7-54b3aeb74952"
+      (reference "R5") (unit 1) (value "100R") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/22bffabe-d9fe-4ef5-80c2-86e6b4d72e70"
+      (reference "R6") (unit 1) (value "10kR") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/3feecb94-fd49-4975-82e1-89f46d2d60c0"
+      (reference "R7") (unit 1) (value "100k") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/f84d8c09-50ef-4f20-a78e-d77b9f79deb5"
+      (reference "R8") (unit 1) (value "0") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/8ce95041-64f8-4a9f-bad7-dd0098a2290d"
+      (reference "V1") (unit 1) (value "VSIN") (footprint "")
+    )
+    (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/6a724f35-2d29-4423-af9d-fc7f89fe9933"
+      (reference "V2") (unit 1) (value "VDC") (footprint "")
+    )
+  )
+)
