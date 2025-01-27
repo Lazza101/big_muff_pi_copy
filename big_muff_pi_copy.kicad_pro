@@ -443,6 +443,10 @@
     [
       "99d97530-d818-4ffa-86d1-9b52d4e8fbdb",
       "effects_sustain"
+    ],
+    [
+      "da6d2dbe-c803-4c71-a2c2-b93220ba3595",
+      "effects_envelope"
     ]
   ],
   "text_variables": {}

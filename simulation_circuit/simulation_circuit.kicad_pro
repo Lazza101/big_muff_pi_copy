@@ -324,6 +324,10 @@
     [
       "526e42b9-dcb2-4f91-83ee-1d25bf9d2787",
       "effects_sustain"
+    ],
+    [
+      "e6e2e2d2-b923-48d0-be33-59979c2e35eb",
+      "effects_envelope"
     ]
   ],
   "text_variables": {}

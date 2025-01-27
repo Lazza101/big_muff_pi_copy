@@ -5,8 +5,75 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (id 0) (at 2.032 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "R" (id 1) (at 0 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at -1.778 0 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Resistor" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
+          (stroke (width 0.254) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+      (symbol "R_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
   )
 
+
+  (wire (pts (xy 129.54 80.01) (xy 128.27 80.01))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 0655d7cc-cb7b-4dd7-bdf4-1996f98d2887)
+  )
+  (wire (pts (xy 160.02 90.17) (xy 167.64 90.17))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 1e95b4ce-5fc5-4fbb-94bb-a95ab8d72425)
+  )
+  (wire (pts (xy 175.26 90.17) (xy 182.88 90.17))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid ce3e1809-b3f5-4c35-a146-97f84df38569)
+  )
+
+  (symbol (lib_id "Device:R") (at 171.45 90.17 270) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 2916d8a1-abd6-4fab-b3c3-bd04a683e5bf)
+    (property "Reference" "R15" (id 0) (at 171.45 83.82 90))
+    (property "Value" "0R" (id 1) (at 171.45 86.36 90))
+    (property "Footprint" "" (id 2) (at 171.45 88.392 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 171.45 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4eda1b82-77ff-4363-885e-798f5d145a2d))
+    (pin "2" (uuid 71ae1573-b965-45b3-8296-3c57caf7ab1c))
+  )
 
   (sheet (at 129.54 76.2) (size 30.48 20.32) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
@@ -32,9 +99,34 @@
     )
   )
 
+  (sheet (at 182.88 76.2) (size 30.48 20.32) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid e6e2e2d2-b923-48d0-be33-59979c2e35eb)
+    (property "Sheet name" "effects_envelope" (id 0) (at 182.88 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "effects_envelope.kicad_sch" (id 1) (at 182.88 97.1046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "+9V" input (at 182.88 80.01 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid a2afe9ca-59ea-4734-9a9f-6ee4154b59a5)
+    )
+    (pin "SIGNAL_OUT" output (at 213.36 90.17 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid f6a7fe1e-7b2d-46a3-afd3-50255339674d)
+    )
+    (pin "SIGNAL_IN" input (at 182.88 90.17 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 58b185df-80c3-42af-90bb-35a941e8937d)
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787" (page "2"))
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb" (page "3"))
   )
 
   (symbol_instances
@@ -47,8 +139,17 @@
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/f2202449-18d4-4644-8524-a662dba77d38"
       (reference "#GND03") (unit 1) (value "0") (footprint "")
     )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/4a1d52b1-4976-4d17-964f-dda50b6fad80"
+      (reference "#GND?") (unit 1) (value "0") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/7878a6fe-6858-466f-9f56-c1f8dd2ec94d"
+      (reference "#GND?") (unit 1) (value "0") (footprint "")
+    )
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/b59a32d9-c8ed-4da6-aba6-5f7bf09d4309"
       (reference "#PWR01") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/31ed097b-5a20-4e2f-937b-e1393697bade"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/a5e9747d-329e-4d3e-8455-ae1d70409960"
       (reference "C1") (unit 1) (value "1uF") (footprint "")
@@ -62,8 +163,26 @@
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/58f600d6-bc9e-4d60-8f32-6cd49af40a68"
       (reference "C4") (unit 1) (value "0.1uF") (footprint "")
     )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/e051c90c-7f94-450c-8423-6e59c778f485"
+      (reference "C5") (unit 1) (value "1uF") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/2726859c-a968-43dc-b7d9-5bd63a5da55c"
+      (reference "C6") (unit 1) (value "500pF") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/d7fcc530-b16c-41dd-800c-2dca768a55a2"
+      (reference "C7") (unit 1) (value "0.1uF") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/ace55088-c4b2-4762-b18f-6c5debc62d13"
+      (reference "D1") (unit 1) (value "1N914") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/e3c1b771-a445-477b-ac34-1a544079affd"
+      (reference "D2") (unit 1) (value "1N914") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+    )
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/c199f0b4-8741-4ede-b3b0-1a50f6638fb9"
       (reference "Q1") (unit 1) (value "BC547") (footprint "Package_TO_SOT_THT:TO-92_Inline")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/ee8ceb34-94ad-41f6-b9d7-5d0f2c5da6e3"
+      (reference "Q2") (unit 1) (value "BC547B") (footprint "Package_TO_SOT_THT:TO-92_Inline")
     )
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/fd99880c-32e1-4366-b100-ba42f7a7bb8b"
       (reference "R1") (unit 1) (value "39kR") (footprint "")
@@ -92,11 +211,35 @@
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/8b51fbda-90a2-4e42-b3cd-88e29027bf04"
       (reference "R9") (unit 1) (value "8.2kR") (footprint "")
     )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/63d80d20-c655-48e1-a7b2-7a4793f4a960"
+      (reference "R10") (unit 1) (value "100kR") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/b6d19e34-a28b-4016-a6c7-3d360b9715e0"
+      (reference "R11") (unit 1) (value "470kR") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/273fd1ce-2452-4503-b426-4e2e4887680e"
+      (reference "R12") (unit 1) (value "15kR") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/42391954-a263-4072-9d44-11ba3b086a65"
+      (reference "R13") (unit 1) (value "100R") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/5f8cebff-71c1-476a-a27a-d485c4e63bdd"
+      (reference "R14") (unit 1) (value "8.2kR") (footprint "")
+    )
+    (path "/2916d8a1-abd6-4fab-b3c3-bd04a683e5bf"
+      (reference "R15") (unit 1) (value "0R") (footprint "")
+    )
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/8ce95041-64f8-4a9f-bad7-dd0098a2290d"
       (reference "V1") (unit 1) (value "VSIN") (footprint "")
     )
     (path "/526e42b9-dcb2-4f91-83ee-1d25bf9d2787/6a724f35-2d29-4423-af9d-fc7f89fe9933"
       (reference "V2") (unit 1) (value "VDC") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/f33a2818-b151-4e23-af27-81de837d407c"
+      (reference "V3") (unit 1) (value "VSIN") (footprint "")
+    )
+    (path "/e6e2e2d2-b923-48d0-be33-59979c2e35eb/ca536ca6-57ae-4727-ac0f-652a2eb7759c"
+      (reference "V4") (unit 1) (value "VDC") (footprint "")
     )
   )
 )

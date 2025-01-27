@@ -39,6 +39,17 @@
 
 *Half Sustain with 2kHz input wave*
 
+- Added the next stage of the effects chain, selected 1N914s for the diodes as suggested in the original schematic.
+    - Looks like an envelope distortion kind of effect, shifts, inverts, transposes the input signal to maintain 
+    an ampitude between 0-1V DC. 
+    - Simulation results are wildly different when testing the stage in isolation than in a chain with the sustain.
+        - In isolation it applies envelope distortion to the input signal as described above.
+        - In series, the sustain output is massively attenuated and does not peak its amplitude up as it did in 
+        the sustain's isolated simulation. This then gets transposed up by the envelope stage and does not get
+        enveloped in the same way the input signal did in the isolated sims.
 
-
+- TODO:
+    - Verify which sim behaviour is correct - isolated or chained?
+    - Add sim results to log
+    - Add and simulate the next stage
 
