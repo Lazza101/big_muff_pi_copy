@@ -431,9 +431,6 @@
     (path "/d7b5727f-89c0-4bda-9026-13c007f6901e"
       (reference "#FLG0102") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/6236c6d4-0557-480b-aba0-fe38e42674f2"
-      (reference "#GND03") (unit 1) (value "0") (footprint "")
-    )
     (path "/bb70fe83-3504-48f3-8544-32053c46a537"
       (reference "#PWR01") (unit 1) (value "VCC") (footprint "")
     )
@@ -450,13 +447,16 @@
       (reference "#PWR05") (unit 1) (value "GND") (footprint "")
     )
     (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/c05b15cf-0ca4-4087-88bb-c2f755825b6b"
-      (reference "C1") (unit 1) (value "0.1uF") (footprint "")
+      (reference "C1") (unit 1) (value "1uF") (footprint "")
     )
     (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/c5876262-7d57-49af-937c-4e3f304e1400"
       (reference "C2") (unit 1) (value "500pF") (footprint "")
     )
     (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/6f389918-49a2-4e07-bf62-61657b2e54fd"
       (reference "C3") (unit 1) (value "0.1uF") (footprint "")
+    )
+    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/3a3cdd89-acd5-4949-a57b-6c760b59e3fa"
+      (reference "C4") (unit 1) (value "0.1uF") (footprint "")
     )
     (path "/71b59c4d-cc06-4a36-8722-a4e1f4b89c0f/73ba6d85-a5ee-41ec-8866-ec164dfaa93e"
       (reference "D1") (unit 1) (value "LED") (footprint "")
@@ -496,6 +496,9 @@
     )
     (path "/71b59c4d-cc06-4a36-8722-a4e1f4b89c0f/35d1ba20-ba7f-43fd-b274-f0e96becbcff"
       (reference "R7") (unit 1) (value "R") (footprint "")
+    )
+    (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/a4629216-7c47-46d1-8fab-325f0162cbad"
+      (reference "R8") (unit 1) (value "8.2kR") (footprint "")
     )
     (path "/96741d4e-b647-413f-918d-c757f9bb68d4/99d97530-d818-4ffa-86d1-9b52d4e8fbdb/02c0bd4c-d9cf-46ba-a70c-af399d76ca2a"
       (reference "RV1") (unit 1) (value "100kR") (footprint "")
